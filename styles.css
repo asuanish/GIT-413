@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -174,6 +173,77 @@ footer a:hover {
   background-color: #000000;
 }
 
+#case-studies {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.case-study {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2rem;
+}
+
+.case-study h2 {
+  display: inline-block;
+  width: 250px;
+  padding: 15px 20px;
+  color: #f15a2b;
+  border-radius: 6px;
+  text-decoration: none;
+  flex-basis: 100%;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.study-content {
+  flex: 1 1 60%;
+  padding-right: 2rem;
+}
+
+.study-section {
+  margin-bottom: 1.5rem;
+}
+
+.study-section h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.study-section textarea {
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+  padding: 0.75rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.study-images {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.study-images img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.study-images p {
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
 /* Footer */
 
 #contact {
@@ -186,9 +256,9 @@ footer a:hover {
 }
 
 #contact a {
+  text-align: center;
   display: inline-block;
   width: 250px;
-  text-align: center;
   padding: 15px 20px;
   background-color: #f15a2b;
   color: white;
@@ -202,42 +272,3 @@ footer a:hover {
   width: 50px;
   height: auto;
 }
-
-/* Responsive */
-
-/* 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .profile-image img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .profile-info h1 {
-    font-size: 2rem;
-  }
-
-  .profile-info h2 {
-    font-size: 1.2rem;
-  }
-
-  .profile-info p {
-    font-size: 1rem;
-  }
-  .projects h2 {
-    font-size: 2rem;
-  }
-
-  .project-card h3 {
-    font-size: 1.25rem;
-  }
-
-  .project-card p {
-    font-size: 0.95rem;
-  }
-} */
